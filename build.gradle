@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id("io.freefair.lombok") version "8.10"
+}
+
+group = 'ru.tele2.govorova.otus.java.pro'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.15.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.0'
+
+    implementation 'com.opencsv:opencsv:5.8'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
